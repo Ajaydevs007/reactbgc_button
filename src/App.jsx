@@ -34,9 +34,6 @@ function App() {
     else if (name == "info") {
       setColor('#c5f2fc')
     }
-    else if (name == "light") {
-      setColor('white')
-    }
     else if (name == "dark") {
       setColor('black')
     }
@@ -56,16 +53,15 @@ function App() {
     <>
 
       <div className='d-flex justify-content-center align-items-center' style={{ height: "100vh", backgroundColor: color }}>
-        <div className=''>
-          <Button variant="outline-primary" onClick={(e) => handleButton(e.target)} name='primary'>Primary</Button>{' '}
-          <Button variant="outline-secondary" name='secondary' onClick={(e) => handleButton(e.target)}>Secondary</Button>{' '}
-          <Button variant="outline-success" name='success' onClick={(e) => handleButton(e.target)}>Success</Button>{' '}
-          <Button variant="outline-warning" name='warning' onClick={(e) => handleButton(e.target)}>Warning</Button>{' '}
-          <Button variant="outline-danger" name='danger' onClick={(e) => handleButton(e.target)}>Danger</Button>{' '}
-          <Button variant="outline-info" name='info' onClick={(e) => handleButton(e.target)}>Info</Button>{' '}
-          <Button variant="outline-light" name='light' onClick={(e) => handleButton(e.target)} className=''>Light</Button>{' '}
-          <Button variant="outline-dark" name='dark' onClick={(e) => handleButton(e.target)}>Dark</Button>{' '}
-          <Button variant="secondary" onClick={(e) => handleButton(e.target)}>Reset</Button>{' '}
+        <div className='d-flex flex-column'>
+          <Button variant="outline-primary" onClick={(e) => handleButton(e.target)} name='primary' className='mb-3'>Primary</Button>{' '}
+          <Button variant="outline-secondary" name='secondary' onClick={(e) => handleButton(e.target)} className='mb-3'>Secondary</Button>{' '}
+          <Button variant="outline-success" name='success' onClick={(e) => handleButton(e.target)} className='mb-3'>Success</Button>{' '}
+          <Button variant="outline-warning" name='warning' onClick={(e) => handleButton(e.target)} className='mb-3'>Warning</Button>{' '}
+          <Button variant="outline-danger" name='danger' onClick={(e) => handleButton(e.target)} className='mb-3'>Danger</Button>{' '}
+          <Button variant="outline-info" name='info' onClick={(e) => handleButton(e.target)} className='mb-3'>Info</Button>{' '}
+          <Button variant="outline-dark" name='dark' onClick={(e) => handleButton(e.target)} className='mb-3'>Dark</Button>{' '}
+          <Button variant="secondary" onClick={(e) => handleButton(e.target)} className='mb-3'>Reset</Button>{' '}
 
         </div>
 
